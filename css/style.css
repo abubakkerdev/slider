@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-x: hidden;
+}
+
+.slider__image {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  position: absolute;
+  transform: translateX(100%);
+}
+.slider__image::after {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.slider__imageOne {
+  background: url("../images/one.webp") no-repeat center;
+}
+.slider__imageTwo {
+  background: url("../images/two.webp") no-repeat center;
+}
+.slider__imageThree {
+  background: url("../images/three.webp") no-repeat center;
+}
+.slider__imageFour {
+  background: url("../images/four.webp") no-repeat center;
+}
+.slider__imageFive {
+  background: url("../images/five.webp") no-repeat center;
+}
+.slider__imageSix {
+  background: url("../images/six.webp") no-repeat center;
+}
+
+
+.slider__active {
+  transform: translateX(0%);
+}
+.slider__arrows {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.arrow__previous {
+  width: 30px;
+  height: 30px;
+  background: white;
+  color: black;
+  line-height: 30px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+}
+.arrow__next {
+  width: 30px;
+  height: 30px;
+  background: white;
+  color: black;
+  line-height: 30px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%);
+}
